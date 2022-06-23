@@ -6,4 +6,4 @@ Press tab to change from linear to quadtree and vice versa.
 
 Using C++ 17
 
-Written using the OLC::PixelGameEngine 2.0
+Written using the OLC::PixelGameEngine 2.0, in Visual Studio.
