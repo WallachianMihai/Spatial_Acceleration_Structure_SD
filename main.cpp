@@ -232,7 +232,7 @@ protected:
     };
 
     std::vector<SomeObjectWithArea> vecObjects;
-    QuadTree<SomeObjectWithArea> treeObjects;
+    QuadTreeContainer<SomeObjectWithArea> treeObjects;
 
     float fArea = 100000.0f;
 
@@ -299,7 +299,7 @@ public:
             auto tpStart = std::chrono::system_clock::now();
             for (const auto& object : treeObjects.search(rScreen))
             {
-                tv.FillRectDecal(object.vPos, object.vSize, object.colour);
+                tv.FillRectDecal(object->vPos, object->vSize, object->colour);
                 ++count;
             }
             std::chrono::duration<float> duration = std::chrono::system_clock::now() - tpStart;
